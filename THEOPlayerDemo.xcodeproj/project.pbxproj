@@ -14,6 +14,7 @@
 		2BE9967721601026000B8C12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE9967521601026000B8C12 /* LaunchScreen.storyboard */; };
 		2BE9967F216010A2000B8C12 /* THEOplayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE9967E216010A2000B8C12 /* THEOplayerSDK.framework */; };
 		2BE99680216010A2000B8C12 /* THEOplayerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE9967E216010A2000B8C12 /* THEOplayerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		562EB17D20C0D062AF165CB1 /* Pods_THEOPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81671C8CF6B671AC94C7E4C9 /* Pods_THEOPlayerDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,9 @@
 		2BE9967621601026000B8C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BE9967821601026000B8C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BE9967E216010A2000B8C12 /* THEOplayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = THEOplayerSDK.framework; sourceTree = "<group>"; };
+		494C09078971DCFA2935F5EA /* Pods-THEOPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THEOPlayerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-THEOPlayerDemo/Pods-THEOPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		81671C8CF6B671AC94C7E4C9 /* Pods_THEOPlayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THEOPlayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98EBDA7CFC00CEEB9A2618F5 /* Pods-THEOPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THEOPlayerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THEOPlayerDemo/Pods-THEOPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BE9967F216010A2000B8C12 /* THEOplayerSDK.framework in Frameworks */,
+				562EB17D20C0D062AF165CB1 /* Pods_THEOPlayerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +64,8 @@
 				2BE9966B21601025000B8C12 /* THEOPlayerDemo */,
 				2BE9966A21601025000B8C12 /* Products */,
 				2BE9967E216010A2000B8C12 /* THEOplayerSDK.framework */,
+				3FF7E4B09404B7B359F25EE7 /* Pods */,
+				B9D2F57AE7E20E0B9BD8FD9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +90,23 @@
 			path = THEOPlayerDemo;
 			sourceTree = "<group>";
 		};
+		3FF7E4B09404B7B359F25EE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98EBDA7CFC00CEEB9A2618F5 /* Pods-THEOPlayerDemo.debug.xcconfig */,
+				494C09078971DCFA2935F5EA /* Pods-THEOPlayerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9D2F57AE7E20E0B9BD8FD9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81671C8CF6B671AC94C7E4C9 /* Pods_THEOPlayerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -90,10 +114,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BE9967B21601026000B8C12 /* Build configuration list for PBXNativeTarget "THEOPlayerDemo" */;
 			buildPhases = (
+				8E1A248C7B087B8A450D1179 /* [CP] Check Pods Manifest.lock */,
 				2BE9966521601025000B8C12 /* Sources */,
 				2BE9966621601025000B8C12 /* Frameworks */,
 				2BE9966721601025000B8C12 /* Resources */,
 				2BE99681216010A2000B8C12 /* Embed Frameworks */,
+				865682FE8D4639CF773690FA /* [CP] Embed Pods Frameworks */,
+				9BD5CCEBBCB3C17C2C6D8CB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +176,77 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		865682FE8D4639CF773690FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-THEOPlayerDemo/Pods-THEOPlayerDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-THEOPlayerDemo/Pods-THEOPlayerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E1A248C7B087B8A450D1179 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-THEOPlayerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BD5CCEBBCB3C17C2C6D8CB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-THEOPlayerDemo/Pods-THEOPlayerDemo-resources.sh",
+				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.3.1_static/GoogleCast.framework/GoogleCastCoreResources.bundle",
+				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.3.1_static/GoogleCast.framework/GoogleCastUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleCastCoreResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleCastUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-THEOPlayerDemo/Pods-THEOPlayerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2BE9966521601025000B8C12 /* Sources */ = {
@@ -300,6 +398,7 @@
 		};
 		2BE9967C21601026000B8C12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98EBDA7CFC00CEEB9A2618F5 /* Pods-THEOPlayerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -321,6 +420,7 @@
 		};
 		2BE9967D21601026000B8C12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 494C09078971DCFA2935F5EA /* Pods-THEOPlayerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
