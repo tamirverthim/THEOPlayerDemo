@@ -41,7 +41,16 @@ class SubtitlesController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(handleCloseTheoPlayer))
+        navigationItem.leftBarButtonItem?.tintColor = .black
+        
         setupUI()
+    }
+    
+    @objc func handleCloseTheoPlayer() {
+        theoPlayer.destroy()
+        navigationController?.popViewController(animated: true)
     }
     
     func setupUI() {
@@ -75,7 +84,7 @@ class SubtitlesController: UIViewController {
     var sampleSource: SourceDescription {
         return SourceDescription(
             source: TypedSource(
-                src: "https://cdn.theoplayer.com/video/elephants-dream/playlist.m3u8",
+                src: "https://cdn.theoplayer.com/video/sintel/index.m3u8",
                 type: SourceType.mp4.rawValue
             )
         )

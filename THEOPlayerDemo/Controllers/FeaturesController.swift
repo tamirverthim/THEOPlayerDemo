@@ -22,6 +22,8 @@ class FeaturesController: UITableViewController {
         
         navigationItem.title = "THEOplayer Features"
 
+       
+        
         tableView.register(FeatureCell.self, forCellReuseIdentifier: cellId)
         tableView.backgroundColor = .white
         tableView.separatorColor = .red
