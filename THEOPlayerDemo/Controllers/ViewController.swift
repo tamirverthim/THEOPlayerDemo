@@ -5,7 +5,6 @@
 //  Created by Slobodan Novakovic on 9/29/18.
 //  Copyright © 2018 Slobo. All rights reserved.
 //
-
 import UIKit
 import THEOplayerSDK
 
