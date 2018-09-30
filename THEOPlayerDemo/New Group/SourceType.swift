@@ -6,7 +6,6 @@
 //  Copyright © 2018 Slobo. All rights reserved.
 //
 
-
 enum SourceType: String {
     case mp4 = "video/mp4"
     case mpegURL = "application/x-mpegURL"
