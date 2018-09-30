@@ -18,6 +18,7 @@ class SubtitlesController: UIViewController {
     }
     
     func setupTheoPlayer() {
+        view.backgroundColor = .white
         var frame: CGRect = UIScreen.main.bounds
         frame.origin.y = 0
         frame.size.height = frame.size.width * 9 / 16

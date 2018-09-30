@@ -52,9 +52,11 @@ class FeaturesController: UITableViewController {
         
         switch indexPath.row {
             case 0:
-            let subtitlesController = SubtitlesController()
-            self.navigationController?.pushViewController(subtitlesController, animated: true)
+                let subtitlesController = SubtitlesController()
+                self.navigationController?.pushViewController(subtitlesController, animated: false)
             case 1:
+                let test = Test()
+                self.navigationController?.pushViewController(test, animated: true)
             break
             case 2:
             break

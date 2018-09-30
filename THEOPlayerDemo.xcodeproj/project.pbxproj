@@ -11,6 +11,7 @@
 		2B6C599121613EA900D83D2C /* SubtitlesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C599021613EA900D83D2C /* SubtitlesController.swift */; };
 		2B6C59952161430F00D83D2C /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C59942161430F00D83D2C /* FeatureCell.swift */; };
 		2B6C599821614CFE00D83D2C /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C599721614CFE00D83D2C /* UIColor+Hex.swift */; };
+		2B6C599A21614F8800D83D2C /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C599921614F8800D83D2C /* Test.swift */; };
 		2BE9966D21601025000B8C12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE9966C21601025000B8C12 /* AppDelegate.swift */; };
 		2BE9967421601026000B8C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE9967321601026000B8C12 /* Assets.xcassets */; };
 		2BE9967721601026000B8C12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE9967521601026000B8C12 /* LaunchScreen.storyboard */; };
@@ -38,6 +39,7 @@
 		2B6C599021613EA900D83D2C /* SubtitlesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitlesController.swift; sourceTree = "<group>"; };
 		2B6C59942161430F00D83D2C /* FeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCell.swift; sourceTree = "<group>"; };
 		2B6C599721614CFE00D83D2C /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		2B6C599921614F8800D83D2C /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		2BE9966921601025000B8C12 /* THEOPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THEOPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE9966C21601025000B8C12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BE9967321601026000B8C12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			children = (
 				2B6C598B216135AA00D83D2C /* FeaturesController.swift */,
 				2B6C599021613EA900D83D2C /* SubtitlesController.swift */,
+				2B6C599921614F8800D83D2C /* Test.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				2BE9966D21601025000B8C12 /* AppDelegate.swift in Sources */,
 				2B6C598C216135AA00D83D2C /* FeaturesController.swift in Sources */,
 				2B6C599821614CFE00D83D2C /* UIColor+Hex.swift in Sources */,
+				2B6C599A21614F8800D83D2C /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AWE9BDDP32;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -448,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AWE9BDDP32;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
