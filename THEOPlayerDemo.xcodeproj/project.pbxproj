@@ -11,8 +11,9 @@
 		2B6C599121613EA900D83D2C /* SubtitlesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C599021613EA900D83D2C /* SubtitlesController.swift */; };
 		2B6C59952161430F00D83D2C /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C59942161430F00D83D2C /* FeatureCell.swift */; };
 		2B6C599821614CFE00D83D2C /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C599721614CFE00D83D2C /* UIColor+Hex.swift */; };
-		2B6C599A21614F8800D83D2C /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C599921614F8800D83D2C /* Test.swift */; };
 		2B6C599D2161619900D83D2C /* SourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C599C2161619900D83D2C /* SourceType.swift */; };
+		2B6C599F2161704800D83D2C /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C599E2161704800D83D2C /* AudioController.swift */; };
+		2B6C59A12161726D00D83D2C /* VR360Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C59A02161726D00D83D2C /* VR360Controller.swift */; };
 		2BE9966D21601025000B8C12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE9966C21601025000B8C12 /* AppDelegate.swift */; };
 		2BE9967421601026000B8C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE9967321601026000B8C12 /* Assets.xcassets */; };
 		2BE9967721601026000B8C12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE9967521601026000B8C12 /* LaunchScreen.storyboard */; };
@@ -40,8 +41,9 @@
 		2B6C599021613EA900D83D2C /* SubtitlesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitlesController.swift; sourceTree = "<group>"; };
 		2B6C59942161430F00D83D2C /* FeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCell.swift; sourceTree = "<group>"; };
 		2B6C599721614CFE00D83D2C /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
-		2B6C599921614F8800D83D2C /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		2B6C599C2161619900D83D2C /* SourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceType.swift; sourceTree = "<group>"; };
+		2B6C599E2161704800D83D2C /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		2B6C59A02161726D00D83D2C /* VR360Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VR360Controller.swift; sourceTree = "<group>"; };
 		2BE9966921601025000B8C12 /* THEOPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THEOPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE9966C21601025000B8C12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BE9967321601026000B8C12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,7 +73,8 @@
 			children = (
 				2B6C598B216135AA00D83D2C /* FeaturesController.swift */,
 				2B6C599021613EA900D83D2C /* SubtitlesController.swift */,
-				2B6C599921614F8800D83D2C /* Test.swift */,
+				2B6C599E2161704800D83D2C /* AudioController.swift */,
+				2B6C59A02161726D00D83D2C /* VR360Controller.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -299,10 +302,11 @@
 				2B6C59952161430F00D83D2C /* FeatureCell.swift in Sources */,
 				2B6C599121613EA900D83D2C /* SubtitlesController.swift in Sources */,
 				2BE9966D21601025000B8C12 /* AppDelegate.swift in Sources */,
+				2B6C59A12161726D00D83D2C /* VR360Controller.swift in Sources */,
 				2B6C599D2161619900D83D2C /* SourceType.swift in Sources */,
 				2B6C598C216135AA00D83D2C /* FeaturesController.swift in Sources */,
 				2B6C599821614CFE00D83D2C /* UIColor+Hex.swift in Sources */,
-				2B6C599A21614F8800D83D2C /* Test.swift in Sources */,
+				2B6C599F2161704800D83D2C /* AudioController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

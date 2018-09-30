@@ -11,7 +11,7 @@ import UIKit
 class FeaturesController: UITableViewController {
     
     let cellId = "cellId"
-    let arrayFeaturesList = ["Subtitles", "Multiple Audio Tracks", "Picture-in-Picture"]
+    let arrayFeaturesList = ["Subtitles", "Multiple Audio Tracks", "VR/360"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +21,6 @@ class FeaturesController: UITableViewController {
     private func setupView() {
         
         navigationItem.title = "THEOplayer Features"
-
-       
         
         tableView.register(FeatureCell.self, forCellReuseIdentifier: cellId)
         tableView.backgroundColor = .white
@@ -55,12 +53,15 @@ class FeaturesController: UITableViewController {
         switch indexPath.row {
             case 0:
                 let subtitlesController = SubtitlesController()
-                self.navigationController?.pushViewController(subtitlesController, animated: false)
+                self.navigationController?.pushViewController(subtitlesController, animated: true)
+            break
             case 1:
-                let test = Test()
-                self.navigationController?.pushViewController(test, animated: true)
+                let audioController = AudioController()
+                self.navigationController?.pushViewController(audioController, animated: true)
             break
             case 2:
+                let vr360Controller = VR360Controller()
+                self.navigationController?.pushViewController(vr360Controller, animated: true)
             break
             default:
             print("Feature needs to be implemented.")

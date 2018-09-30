@@ -10,7 +10,7 @@ import THEOplayerSDK
 
 class SubtitlesController: UIViewController {
 
-    var listeners = [String: EventListener]()
+    private var listeners = [String: EventListener]()
     
     lazy var theoPlayer: THEOplayer = {
         let tP = THEOplayer()
@@ -45,15 +45,18 @@ class SubtitlesController: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(handleCloseTheoPlayer))
         navigationItem.leftBarButtonItem?.tintColor = .black
         
+        navigationItem.title = "Subtitles"
+        
         setupUI()
     }
     
-    @objc func handleCloseTheoPlayer() {
+    @objc private func handleCloseTheoPlayer() {
+        removeEventListeners()
         theoPlayer.destroy()
         navigationController?.popViewController(animated: true)
     }
     
-    func setupUI() {
+    private func setupUI() {
         view.backgroundColor = .white
 
         var frame: CGRect = UIScreen.main.bounds
@@ -81,19 +84,22 @@ class SubtitlesController: UIViewController {
         attachEventListeners()
     }
     
-    var sampleSource: SourceDescription {
+    private var sampleSource: SourceDescription {
         return SourceDescription(
             source: TypedSource(
-                src: "https://cdn.theoplayer.com/video/sintel/index.m3u8",
+                src: "https://cdn.theoplayer.com/video/elephants-dream/playlist.m3u8",
                 type: SourceType.mp4.rawValue
             )
         )
     }
     
-    func attachEventListeners() {
-        self.listeners["subtitleChange"] = theoPlayer.textTracks.addEventListener(type: TextTrackListEventTypes.CHANGE) { (eventProtocol) in
+    private func attachEventListeners() {
+        listeners["subtitleChange"] = theoPlayer.textTracks.addEventListener(type: TextTrackListEventTypes.CHANGE) { (eventProtocol) in
                 self.labelSubtitleLanguage.text = eventProtocol.track.label
         }
     }
-
+    
+    private func removeEventListeners() {
+        theoPlayer.textTracks.removeEventListener(type: TextTrackListEventTypes.CHANGE, listener: listeners["subtitleChange"]!)
+    }
 }
