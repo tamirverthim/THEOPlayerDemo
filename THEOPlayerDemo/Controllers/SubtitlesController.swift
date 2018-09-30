@@ -16,7 +16,6 @@ class SubtitlesController: UIViewController {
         let tP = THEOplayer()
         tP.source = sampleSource
         tP.autoplay = true
-      
         return tP
     }()
     
@@ -83,9 +82,8 @@ class SubtitlesController: UIViewController {
     }
     
     func attachEventListeners() {
-        
-        self.listeners["subtitleChange"] = theoPlayer.audioTracks.addEventListener(type: TextTrackListEventTypes.CHANGE) { (eventProtocol) in
-            print("Subtitle Changed:", eventProtocol.track.label)
+        self.listeners["subtitleChange"] = theoPlayer.textTracks.addEventListener(type: TextTrackListEventTypes.CHANGE) { (eventProtocol) in
+                self.labelSubtitleLanguage.text = eventProtocol.track.label
         }
     }
 
