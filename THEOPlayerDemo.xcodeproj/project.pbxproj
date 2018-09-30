@@ -10,6 +10,7 @@
 		2B6C598C216135AA00D83D2C /* FeaturesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C598B216135AA00D83D2C /* FeaturesController.swift */; };
 		2B6C599121613EA900D83D2C /* SubtitlesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C599021613EA900D83D2C /* SubtitlesController.swift */; };
 		2B6C59952161430F00D83D2C /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C59942161430F00D83D2C /* FeatureCell.swift */; };
+		2B6C599821614CFE00D83D2C /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C599721614CFE00D83D2C /* UIColor+Hex.swift */; };
 		2BE9966D21601025000B8C12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE9966C21601025000B8C12 /* AppDelegate.swift */; };
 		2BE9967421601026000B8C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE9967321601026000B8C12 /* Assets.xcassets */; };
 		2BE9967721601026000B8C12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE9967521601026000B8C12 /* LaunchScreen.storyboard */; };
@@ -36,6 +37,7 @@
 		2B6C598B216135AA00D83D2C /* FeaturesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesController.swift; sourceTree = "<group>"; };
 		2B6C599021613EA900D83D2C /* SubtitlesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitlesController.swift; sourceTree = "<group>"; };
 		2B6C59942161430F00D83D2C /* FeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCell.swift; sourceTree = "<group>"; };
+		2B6C599721614CFE00D83D2C /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		2BE9966921601025000B8C12 /* THEOPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THEOPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE9966C21601025000B8C12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BE9967321601026000B8C12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +79,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		2B6C599621614CE200D83D2C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2B6C599721614CFE00D83D2C /* UIColor+Hex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2BE9966021601025000B8C12 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		2BE9966B21601025000B8C12 /* THEOPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2B6C599621614CE200D83D2C /* Extensions */,
 				2B6C5993216142F200D83D2C /* Cells */,
 				2B6C598A2161356B00D83D2C /* Controllers */,
 				2BE9966C21601025000B8C12 /* AppDelegate.swift */,
@@ -275,6 +286,7 @@
 				2B6C599121613EA900D83D2C /* SubtitlesController.swift in Sources */,
 				2BE9966D21601025000B8C12 /* AppDelegate.swift in Sources */,
 				2B6C598C216135AA00D83D2C /* FeaturesController.swift in Sources */,
+				2B6C599821614CFE00D83D2C /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

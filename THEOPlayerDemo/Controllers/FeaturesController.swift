@@ -47,4 +47,20 @@ class FeaturesController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        switch indexPath.row {
+            case 0:
+            let subtitlesController = SubtitlesController()
+            self.navigationController?.pushViewController(subtitlesController, animated: true)
+            case 1:
+            break
+            case 2:
+            break
+            default:
+            print("Feature needs to be implemented.")
+        }
+    }
+   
 }
