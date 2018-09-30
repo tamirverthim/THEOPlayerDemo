@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SubtitlesController.swift
 //  THEOPlayerDemo
 //
 //  Created by Slobodan Novakovic on 9/29/18.
@@ -8,7 +8,7 @@
 import UIKit
 import THEOplayerSDK
 
-class ViewController: UIViewController {
+class SubtitlesController: UIViewController {
     var theoplayer: THEOplayer!
     
     override func viewDidLoad() {
