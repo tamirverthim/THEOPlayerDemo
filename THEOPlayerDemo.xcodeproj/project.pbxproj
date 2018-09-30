@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B6C598C216135AA00D83D2C /* FeaturesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C598B216135AA00D83D2C /* FeaturesController.swift */; };
 		2BE9966D21601025000B8C12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE9966C21601025000B8C12 /* AppDelegate.swift */; };
 		2BE9966F21601025000B8C12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE9966E21601025000B8C12 /* ViewController.swift */; };
-		2BE9967221601025000B8C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE9967021601025000B8C12 /* Main.storyboard */; };
 		2BE9967421601026000B8C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE9967321601026000B8C12 /* Assets.xcassets */; };
 		2BE9967721601026000B8C12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE9967521601026000B8C12 /* LaunchScreen.storyboard */; };
 		2BE9967F216010A2000B8C12 /* THEOplayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE9967E216010A2000B8C12 /* THEOplayerSDK.framework */; };
@@ -32,10 +32,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B6C598B216135AA00D83D2C /* FeaturesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesController.swift; sourceTree = "<group>"; };
 		2BE9966921601025000B8C12 /* THEOPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THEOPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE9966C21601025000B8C12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BE9966E21601025000B8C12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2BE9967121601025000B8C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BE9967321601026000B8C12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BE9967621601026000B8C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BE9967821601026000B8C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B6C598A2161356B00D83D2C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2BE9966E21601025000B8C12 /* ViewController.swift */,
+				2B6C598B216135AA00D83D2C /* FeaturesController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		2BE9966021601025000B8C12 = {
 			isa = PBXGroup;
 			children = (
@@ -80,9 +89,8 @@
 		2BE9966B21601025000B8C12 /* THEOPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2B6C598A2161356B00D83D2C /* Controllers */,
 				2BE9966C21601025000B8C12 /* AppDelegate.swift */,
-				2BE9966E21601025000B8C12 /* ViewController.swift */,
-				2BE9967021601025000B8C12 /* Main.storyboard */,
 				2BE9967321601026000B8C12 /* Assets.xcassets */,
 				2BE9967521601026000B8C12 /* LaunchScreen.storyboard */,
 				2BE9967821601026000B8C12 /* Info.plist */,
@@ -171,7 +179,6 @@
 			files = (
 				2BE9967721601026000B8C12 /* LaunchScreen.storyboard in Resources */,
 				2BE9967421601026000B8C12 /* Assets.xcassets in Resources */,
-				2BE9967221601025000B8C12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,20 +262,13 @@
 			files = (
 				2BE9966F21601025000B8C12 /* ViewController.swift in Sources */,
 				2BE9966D21601025000B8C12 /* AppDelegate.swift in Sources */,
+				2B6C598C216135AA00D83D2C /* FeaturesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2BE9967021601025000B8C12 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2BE9967121601025000B8C12 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2BE9967521601026000B8C12 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -414,7 +414,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.slobo.THEOPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -436,7 +436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.slobo.THEOPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
