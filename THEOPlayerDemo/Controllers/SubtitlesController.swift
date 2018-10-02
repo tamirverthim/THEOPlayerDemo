@@ -25,7 +25,7 @@ class SubtitlesController: UIViewController {
         label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Current subtitle:"
+        label.text = "Current/previous subtitle:"
         return label
     }()
     
@@ -92,10 +92,10 @@ class SubtitlesController: UIViewController {
             )
         )
     }
-    
+        
     private func attachEventListeners() {
         listeners["subtitleChange"] = theoPlayer.textTracks.addEventListener(type: TextTrackListEventTypes.CHANGE) { (eventProtocol) in
-                self.labelSubtitleLanguage.text = eventProtocol.track.label
+            self.labelSubtitleLanguage.text = eventProtocol.track.label
         }
     }
     

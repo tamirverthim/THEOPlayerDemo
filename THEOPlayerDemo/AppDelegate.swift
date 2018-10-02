@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
+        RunLoop.current.run(until: Date(timeIntervalSinceNow: 1))
+        
         UINavigationBar.appearance().tintColor = .black
         UINavigationBar.appearance().barTintColor = UIColor.theoColorYellow
         UINavigationBar.appearance().isTranslucent = false
