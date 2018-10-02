@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0BE7E92163EE22008EE72E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0BE7E82163EE22008EE72E /* Reachability.swift */; };
+		2B0BE7EB2163EEA8008EE72E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0BE7EA2163EEA8008EE72E /* Alert.swift */; };
 		2B6C598C216135AA00D83D2C /* FeaturesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C598B216135AA00D83D2C /* FeaturesController.swift */; };
 		2B6C599121613EA900D83D2C /* SubtitlesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C599021613EA900D83D2C /* SubtitlesController.swift */; };
 		2B6C59952161430F00D83D2C /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C59942161430F00D83D2C /* FeatureCell.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B0BE7E82163EE22008EE72E /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		2B0BE7EA2163EEA8008EE72E /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		2B6C598B216135AA00D83D2C /* FeaturesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesController.swift; sourceTree = "<group>"; };
 		2B6C599021613EA900D83D2C /* SubtitlesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitlesController.swift; sourceTree = "<group>"; };
 		2B6C59942161430F00D83D2C /* FeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCell.swift; sourceTree = "<group>"; };
@@ -95,12 +99,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		2B6C599B2161617C00D83D2C /* New Group */ = {
+		2B6C599B2161617C00D83D2C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				2B6C599C2161619900D83D2C /* SourceType.swift */,
+				2B0BE7E82163EE22008EE72E /* Reachability.swift */,
+				2B0BE7EA2163EEA8008EE72E /* Alert.swift */,
 			);
-			path = "New Group";
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		2BE9966021601025000B8C12 = {
@@ -125,7 +131,7 @@
 		2BE9966B21601025000B8C12 /* THEOPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2B6C599B2161617C00D83D2C /* New Group */,
+				2B6C599B2161617C00D83D2C /* Helpers */,
 				2B6C599621614CE200D83D2C /* Extensions */,
 				2B6C5993216142F200D83D2C /* Cells */,
 				2B6C598A2161356B00D83D2C /* Controllers */,
@@ -304,8 +310,10 @@
 				2BE9966D21601025000B8C12 /* AppDelegate.swift in Sources */,
 				2B6C59A12161726D00D83D2C /* VR360Controller.swift in Sources */,
 				2B6C599D2161619900D83D2C /* SourceType.swift in Sources */,
+				2B0BE7E92163EE22008EE72E /* Reachability.swift in Sources */,
 				2B6C598C216135AA00D83D2C /* FeaturesController.swift in Sources */,
 				2B6C599821614CFE00D83D2C /* UIColor+Hex.swift in Sources */,
+				2B0BE7EB2163EEA8008EE72E /* Alert.swift in Sources */,
 				2B6C599F2161704800D83D2C /* AudioController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -50,6 +50,11 @@ class FeaturesController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        if !Reachability.isConnectedToNetwork() {
+            Alert.showBasicAlert(on: self, tittle: "No Internet connection!", message: " Please, connect to the Interent to test the THEOplayer's features.")
+            return
+        }
+        
         switch indexPath.row {
             case 0:
                 let subtitlesController = SubtitlesController()
