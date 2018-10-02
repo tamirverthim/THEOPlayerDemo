@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B0BE7E92163EE22008EE72E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0BE7E82163EE22008EE72E /* Reachability.swift */; };
 		2B0BE7EB2163EEA8008EE72E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0BE7EA2163EEA8008EE72E /* Alert.swift */; };
+		2B0BE7ED2163F2D8008EE72E /* FeaturesController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0BE7EC2163F2D8008EE72E /* FeaturesController+UITableView.swift */; };
 		2B6C598C216135AA00D83D2C /* FeaturesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C598B216135AA00D83D2C /* FeaturesController.swift */; };
 		2B6C599121613EA900D83D2C /* SubtitlesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C599021613EA900D83D2C /* SubtitlesController.swift */; };
 		2B6C59952161430F00D83D2C /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C59942161430F00D83D2C /* FeatureCell.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		2B0BE7E82163EE22008EE72E /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		2B0BE7EA2163EEA8008EE72E /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		2B0BE7EC2163F2D8008EE72E /* FeaturesController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturesController+UITableView.swift"; sourceTree = "<group>"; };
 		2B6C598B216135AA00D83D2C /* FeaturesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesController.swift; sourceTree = "<group>"; };
 		2B6C599021613EA900D83D2C /* SubtitlesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitlesController.swift; sourceTree = "<group>"; };
 		2B6C59942161430F00D83D2C /* FeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCell.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				2B6C599721614CFE00D83D2C /* UIColor+Hex.swift */,
+				2B0BE7EC2163F2D8008EE72E /* FeaturesController+UITableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				2B6C59952161430F00D83D2C /* FeatureCell.swift in Sources */,
 				2B6C599121613EA900D83D2C /* SubtitlesController.swift in Sources */,
 				2BE9966D21601025000B8C12 /* AppDelegate.swift in Sources */,
+				2B0BE7ED2163F2D8008EE72E /* FeaturesController+UITableView.swift in Sources */,
 				2B6C59A12161726D00D83D2C /* VR360Controller.swift in Sources */,
 				2B6C599D2161619900D83D2C /* SourceType.swift in Sources */,
 				2B0BE7E92163EE22008EE72E /* Reachability.swift in Sources */,
